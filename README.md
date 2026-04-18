@@ -56,3 +56,4 @@
 
 ## КОНТАКТНАЯ ИНФОРМАЦИЯ
 * **Автор**: Uladzislau Haiduk.
+* **Email**: lolly1bomb2@gmail.com.
