@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_dark"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VECTOR LAB"
+        android:textColor="@color/neon_purple"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.15"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/card_glass"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SYSTEM PERMISSIONS"
+            android:textColor="@color/neon_blue"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="12dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="CAMERA" android:textColor="@color/white" android:textSize="16sp" android:textStyle="bold"/>
+            <TextView android:id="@+id/statusCamera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="UNKNOWN" android:textColor="@color/text_gray" android:textSize="16sp" android:fontFamily="monospace"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="12dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="CONTACTS" android:textColor="@color/white" android:textSize="16sp" android:textStyle="bold"/>
+            <TextView android:id="@+id/statusContacts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="UNKNOWN" android:textColor="@color/text_gray" android:textSize="16sp" android:fontFamily="monospace"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="LOCATION" android:textColor="@color/white" android:textSize="16sp" android:textStyle="bold"/>
+            <TextView android:id="@+id/statusLocation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="UNKNOWN" android:textColor="@color/text_gray" android:textSize="16sp" android:fontFamily="monospace"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btnRequestAll"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="REQUEST ALL"
+        android:textColor="@color/bg_dark"
+        android:backgroundTint="@color/neon_blue"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnOpenSettings"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="OPEN APP SETTINGS"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/card_glass"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+</LinearLayout>
